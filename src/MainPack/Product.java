@@ -68,9 +68,9 @@ public class Product {
 	//put everything in a string
 	public String toString()
 	{
-		return "The barcode is " + barCode
-				+ ",the price is " + price
-				+ ",the tax is " + tax;
+		return "Barcode: " + barCode
+				+ " | $" + price
+				+ " | tax: " + tax + "%";
 	}
 	
 	//see if one Product is equal to another

@@ -73,9 +73,9 @@ public class Clothes extends Product{
 	public String toString()
 	{
 		return super.toString()
-				+ ", the type is " + type
-				+ ", the size is " + size
-				+ ", the color is " + color; 
+				+ " | type: " + type
+				+ " | size: " + size
+				+ " | color: " + color; 
 	}
 	
 	//see if one Clothes is equal to another

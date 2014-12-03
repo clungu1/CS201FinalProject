@@ -59,8 +59,8 @@ public class Food extends Product{
 	public String toString()
 	{
 		return super.toString()
-				+ ", the name is " + name
-				+ ", the quality is " + quality;
+				+ " | name: " + name
+				+ " | quality: " + quality;
 	}
 	
 	//see if one Food is equal to another
