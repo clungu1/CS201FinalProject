@@ -9,6 +9,7 @@ package MainPack;
 
 import java.util.Scanner;
 
+
 public class Menu{
 	
 	private Objects arr;
@@ -343,90 +344,43 @@ public class Menu{
 	    		//what would you like to update?
 	    		System.out.println("What would you like to update?");
 		    	
-	    		//1. Category
-	    		System.out.println("1. Category");
-	    		//2. Name/Type
-	    		System.out.println("2. Name(Food)/Type(Clothes)");
-	    		//3. Price
-	    		System.out.println("3. Price");
-	    		//4. Manufacturer
-	    		System.out.println("4. Manufacturer");
-	    		//5. Quality/Size
-	    		System.out.println("5. Quality(Food)/Size(Clothes)");
-	    		//6. Color
-	    		System.out.println("6. Color(Clothes)");
-	    		//7. Go back
-	    		System.out.println("7. Go back");
+	    		//1. Name/Type
+	    		System.out.println("1. Name(Food)/Type(Clothes)");
+	    		//2. Price
+	    		System.out.println("2. Price");
+	    		//3. Manufacturer
+	    		System.out.println("3. Manufacturer");
+	    		//4. Quality/Size
+	    		System.out.println("4. Quality(Food)/Size(Clothes)");
+	    		//5. Color
+	    		System.out.println("5. Color(Clothes)");
+	    		//6. Go back
+	    		System.out.println("6. Go back");
 	    		
 	    		int q = in.nextInt();
 	    		
-	    		if(q == 1)//category
-	    		{
-	    			//0 for Food or 1 for Clothes
-	    			System.out.println("0 for Food or 1 for Clothes");
-	    			q = in.nextInt();
-	 //it doesn't work like this. you gotta do a whole new object with the same characteristics but from a different class	    			
-	    			if(q == 0)//food
-	    			{
-	    				if(((Product)obj).getBarCode() < 200)//is food
-	    				{
-	    					System.out.println("The Product is already of type Food so there is no point in chainging it");
-	    					update();
-	    				}
-	    				else//is clothes
-	    				{
-	    					//not good
-	    					arr.setClothesCounter(arr.getClothesCounter() - 1);
-	    					arr.setFoodCounter(arr.getFoodCounter() + 1);
-	    					((Product)obj).setBarCode(100 + arr.getFoodCounter());
-	    					arr.sortBC();
-	    					pannel();
-	    				}
-	    			}
-	    			else if(q == 1)//clothes
-	    			{
-	    				if(((Product)obj).getBarCode() >= 200)//is clothes
-	    				{
-	    					System.out.println("The Product is already of type Clothes so there is no point in chainging it");
-	    					update();
-	    				}
-	    				else
-	    				{
-	    					arr.setClothesCounter(arr.getClothesCounter() + 1);
-	    					arr.setFoodCounter(arr.getFoodCounter() - 1);
-	    					((Product)obj).setBarCode(200 + arr.getClothesCounter());
-	    					arr.sortBC();
-	    					pannel();
-	    				}
-	    			}
-	    			else //idiot
-	    			{
-	    				idiot++;
-	    				System.out.println("Arghh...");
-	    				update();
-	    			}
-	    		}
-	    		else if(q == 2)//name/type
+	    		
+	    		if(q == 1)//name/type
 	    		{
 	    			
 	    		}
-	    		else if(q == 3)//price
+	    		else if(q == 2)//price
 	    		{
 	    			
 	    		}
-	    		else if(q == 4)//manufacturer
+	    		else if(q == 3)//manufacturer
 	    		{
 	    			
 	    		}
-	    		else if(q == 5)//quality/size
+	    		else if(q == 4)//quality/size
 	    		{
 	    			
 	    		}
-	    		else if(q == 6)//color
+	    		else if(q == 5)//color
 	    		{
 	    			
 	    		}
-	    		else if(q == 7)//go back
+	    		else if(q == 6)//go back
 	    		{
 	    			
 	    		}
