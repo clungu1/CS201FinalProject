@@ -34,7 +34,7 @@ public class Application {
 		array.setIndex(array.getIndex() - 1);
 		
 		//instantiate the menu
-		Menu menu = new Menu(array);
+		Menu menu = new Menu(array, reed);
 		
 		
 	}

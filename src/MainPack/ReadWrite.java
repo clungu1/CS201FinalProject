@@ -26,7 +26,7 @@ public class ReadWrite {
 		in = new Scanner(new File(fileName));
 	}
 	
-	private static Manufacturer splitManufacturer (String manufacturer) {
+	public static Manufacturer splitManufacturer (String manufacturer) {
 		
 		if(!manufacturer.equals(""))
 		{
